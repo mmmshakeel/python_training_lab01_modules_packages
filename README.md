@@ -27,6 +27,12 @@ Switch to the modules branch to see how `__name__` changes between direct script
 git checkout feature/01-modules
 python3 main.py
 ```
+#### Folder structure
+```
+python_training_lab01_modules_packages/
+├── geometry.py
+└── main.py
+```
 
 ### Step 3: See Package Initialization
 Switch to the packages branch to watch `__init__.py` automatically execute upon importing a folder.
@@ -34,10 +40,26 @@ Switch to the packages branch to watch `__init__.py` automatically execute upon 
 git checkout feature/02-packages
 python3 main.py
 ```
+#### Folder structure
+```
+python_training_lab01_modules_packages/
+├── main.py
+└── shapes/
+    ├── __init__.py
+    └── geometry.py
+```
 
 ### Step 4: Execute a Package Directory
 Switch to the execution branch to run the entire folder directory directly as a script using the module flag.
 ```bash
 git checkout feature/03-execution
 python3 -m shapes
+```
+#### Folder structure
+```
+python_training_lab01_modules_packages/
+└── shapes/
+    ├── __init__.py
+    ├── __main__.py
+    └── geometry.py
 ```
